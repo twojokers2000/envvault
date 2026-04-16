@@ -1,0 +1,56 @@
+{
+  "name": "envvault",
+  "version": "1.0.0",
+  "description": "Type-safe, zero-dependency environment variable validator for Node.js & TypeScript",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "validation",
+    "typescript",
+    "type-safe",
+    "dotenv",
+    "config",
+    "zero-dependency"
+  ],
+  "author": "Vivek Rajput",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twojokers2000/envvault"
+  },
+  "homepage": "https://github.com/twojokers2000/envvault#readme",
+  "bugs": {
+    "url": "https://github.com/twojokers2000/envvault/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
