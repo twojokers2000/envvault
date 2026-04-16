@@ -1,5 +1,5 @@
 {
-  "name": "@twojokers/envvault",
+  "name": "@twojokers2000/envvault",
   "version": "1.0.0",
   "description": "Type-safe, zero-dependency environment variable validator for Node.js & TypeScript",
   "main": "./dist/index.js",
